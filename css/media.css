@@ -1,0 +1,504 @@
+@media (min-width: 320px) and (max-width: 575px) {
+
+    /****Mobile Nav*****/
+
+    .mobileNavStyle{
+        width: 260px !important;;
+    }
+    .logo a img{
+        width: 65%;
+    }
+    .mobile-nav > .row{
+        align-items: center;
+    }
+    /****Mobile Nav*****/
+
+    /****Banner Section Start****/
+    .header-banner{
+        padding-top: 75px;
+        padding-bottom: 65px;
+        min-height: 85vh;
+    }
+    
+    .banner-details h1 {
+        font-size: 35px;
+        line-height: 50px;
+        margin-bottom: 15px;
+    }
+    .banner-details h3 {
+        font-size: 22px;
+    }
+    .banner-details p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .banner-img-warpper{
+        padding-top: 40px;
+    }
+    /****Banner Section End****/
+
+    /*********Why Section Start*********/
+    .why{
+        padding: 70px 0px;
+    }
+    .happy, .subscription{
+        padding: 50px 0px;
+    }
+    .why-details, .happy-details{
+        margin-bottom: 45px;
+    }
+    .why-details h1, .happy-details h1{
+        font-size:25px;
+    }
+    .why-details p, .happy-details p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .service-row {
+        background-position: -220px 0px;
+    }
+    .service_mt{
+        text-align: center;
+    }
+    .service_mt img{
+        width:40%;
+    }
+    .our-service p {
+        font-size:16px;
+        line-height:30px;
+        margin-bottom: 0;
+    }
+    /*********Why Section End*********/
+    
+    
+    /*********Download Section Start*********/
+    .download{
+        padding: 40px 0px;
+    }
+    .download-details > h1{
+        font-size:25px;
+        line-height:45px;
+    }
+    .download-details p{
+        font-size:16px;
+    }
+    .download-btn{
+        margin-bottom: 20px;
+    }
+    .download-btn .col-4{
+        justify-content: center;
+    }
+    .download-btn img{
+        width:40%;
+    }
+    .app-details h1{
+        font-size:22px;
+    }
+    /*********Download Section End*********/
+
+    /*********Happy Client Section Start*********/
+    .client-card{
+        padding:25px;
+    }
+    .clientCardOne {
+        box-shadow: 0px 0px 1rem #00000013;
+    }
+    .clientCardTwo{
+        margin: 45px 0px;
+        box-shadow: 0px 0px 45px #f8951d4f;
+    }
+    .client-card h3 {
+        font-size:22px;
+        margin-bottom: 20px!important;
+    }
+    .client-card p, .client-card ul li span {
+        font-size:17px;
+    }
+    /*********Happy Client Section End*********/
+
+    /*********Email Subscription Section Start*********/
+
+    .email-subscription{
+        padding:25px;
+    }
+    .email-subscription h3{
+        font-size:25px;
+    }
+    .email-subscription p{
+        font-size: 16px;
+    }
+
+    form .username, form .useremail{
+        margin-bottom: 25px;
+    }
+
+    /*********Email Subscription Section Start*********/
+
+
+
+    .b_food1-img,
+    .b_food2-img{
+        display: none;
+    }
+    .download-s{
+        display: none;
+    }
+    .footer-food{
+        display: none;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /****Mobile Nav*****/
+
+    .mobileNavStyle{
+        width: 260px !important;;
+    }
+    .logo a img{
+        width: 65%;
+    }
+    .mobile-nav > .row{
+        align-items: center;
+    }
+    /****Mobile Nav*****/
+
+    /****Banner Section Start****/
+    .header-banner{
+        padding-top: 75px;
+        padding-bottom: 65px;
+    }
+    .banner-details h1 {
+        font-size: 35px;
+        line-height: 50px;
+        margin-bottom: 15px;
+    }
+    .banner-details h3 {
+        font-size: 22px;
+    }
+    .banner-details p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .banner-img-warpper{
+        padding-top: 40px;
+    }
+    /****Banner Section End****/
+
+    /*********Why Section Start*********/
+    .why{
+        padding: 70px 0px;
+    }
+    .happy, .subscription{
+        padding: 50px 0px;
+    }
+    .why-details, .happy-details{
+        margin-bottom: 45px;
+    }
+    .why-details h1, .happy-details h1{
+        font-size:25px;
+    }
+    .why-details p, .happy-details p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .service-row {
+        background-position: -200px 0px;
+    }
+    .service_mt{
+        text-align: center;
+    }
+    .service_mt img{
+        width:40%;
+    }
+    .our-service p {
+        font-size:16px;
+        line-height:30px;
+        margin-bottom: 0;
+    }
+    /*********Why Section End*********/
+    
+    
+    /*********Download Section Start*********/
+    .download{
+        padding: 40px 0px;
+    }
+    .download-details > h1{
+        font-size:25px;
+        line-height:45px;
+    }
+    .download-details p{
+        font-size:16px;
+    }
+    .download-btn{
+        margin-bottom: 20px;
+    }
+    .download-btn .col-4{
+        justify-content: center;
+    }
+    .download-btn img{
+        width:40%;
+    }
+    .app-details h1{
+        font-size:22px;
+    }
+    /*********Download Section End*********/
+
+    /*********Happy Client Section Start*********/
+    .client-card{
+        padding:25px;
+    }
+    .clientCardOne {
+        box-shadow: 0px 0px 1rem #00000013;
+    }
+    .clientCardTwo{
+        margin: 45px 0px;
+        box-shadow: 0px 0px 45px #f8951d4f;
+    }
+    .client-card h3 {
+        font-size:22px;
+        margin-bottom: 20px!important;
+    }
+    .client-card p, .client-card ul li span {
+        font-size:17px;
+    }
+    /*********Happy Client Section End*********/
+
+    /*********Email Subscription Section Start*********/
+
+    .email-subscription{
+        padding:25px;
+    }
+    .email-subscription h3{
+        font-size:25px;
+    }
+    .email-subscription p{
+        font-size: 16px;
+    }
+
+    form .username, form .useremail{
+        margin-bottom: 25px;
+    }
+
+    /*********Email Subscription Section Start*********/
+
+
+
+    .b_food1-img,
+    .b_food2-img{
+        display: none;
+    }
+    .download-s{
+        display: none;
+    }
+    .footer-food{
+        display: none;
+    }
+
+}
+@media (min-width:1200px) and (max-width:1399.98px){
+    /*************Header Section Start*******************/
+    /*====nav Section Start=====*/
+    .navbar-nav .nav-item{
+        margin: 0px 16px;
+    }
+    /*====Banner Section Start=====*/
+    .header-banner {
+        padding-bottom: 85px;
+    }
+    .banner-details {
+        margin-left: 15%;
+    }
+    .banner-details h3{
+        font-size:34px;
+        margin-bottom: 0;
+    }
+    .banner-details h1{
+        font-size: 47.5px;
+        margin-bottom: 10px;
+    }
+    .banner-details p{
+        font-size:16px;
+    }
+    .banner-img-warpper{
+        margin-right: 65px;
+    }
+    .b_food1-img{
+        right: -85px;
+        width:15%;
+
+    }
+    .b_food2-img {
+        left: -95px;
+        width: 15%;
+        bottom: 30px;
+    }
+    /**************Banner Section End*****************/
+
+
+    /**************Why Section Start*****************/
+    .service-row {
+        background-position: 190px 0;
+        background-size: 775px;
+    }
+    .our-service h3 {
+        font-size: 20px;
+    }
+    .our-service p {
+        font-size: 13px;
+    }
+    /**************Why Section End*****************/
+
+    /**************Download Section Start*****************/
+    .download-s {
+        right: -185px;
+        width: 40%;
+        top: -210px;
+    }
+    .email-s {
+        left: -140px;
+        top: -130px;
+    }
+    .download-details h1 {
+        font-size: 45px;
+    }
+    .download-details p {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+    .app-details h3 {
+        font-size: 15px;
+    }  
+    .app-details h1 {
+        font-size: 25px;
+    }
+    .precious-food {
+        margin-top: -460px;
+    }
+    /**************Download Section End*****************/
+
+    /**************Footer Section Start*****************/
+    .footer-s {
+        width: 23%;
+        bottom: 70px;
+        left: -170px;
+    }
+    .footer-food {
+        width: 23%;
+        bottom: 70px;
+        right: -150px;
+    }
+    .copyright p {
+        font-size: 16px;
+    }
+    /**************Footer Section End*****************/
+
+
+}
+@media (min-width:1400px) and (max-width:1599.98px){
+    /*************Header Section Start*******************/
+    /*====nav Section Start=====*/
+    .navbar-nav .nav-item{
+        margin: 0px 18px;
+    }
+    /*====Banner Section Start=====*/
+    .banner-details {
+        margin-left: 20%;
+    }
+    .banner-details h3{
+        font-size:38px;
+    }
+    .banner-details h1{
+        font-size: 72px;
+    }
+    .banner-details p{
+        font-size:18px;
+    }
+    .banner-img-warpper{
+        margin-right: 70px;
+    }
+    .b_food1-img{
+        right: -150px;
+
+    }
+    .b_food2-img{
+        left: -200px;
+    }
+    /**************Banner Section End*****************/
+
+    /**************Download Section Start*****************/
+    .download-s {
+        right: -290px;
+    }
+    .email-s {
+        left: -170px;
+        top: -130px;
+    }  
+    /**************Download Section End*****************/
+
+    /**************Footer Section Start*****************/
+    .footer-s {
+        width: 22%;
+        bottom: 50px;
+        left: -170px;
+    }
+    .footer-food {
+        width: 22%;
+        bottom: 50px;
+        right: -190px;
+    }
+    /**************Footer Section End*****************/
+
+
+}
+@media (min-width:1600px) and (max-width:1800px){
+    /*************Header Section Start*******************/
+    /*====nav Section Start=====*/
+    .navbar-nav .nav-item{
+        margin: 0px 20px;
+    }
+    /*====Banner Section Start=====*/
+    .banner-details h3{
+        font-size:38px;
+    }
+    .banner-details h1{
+        font-size:72px;
+    }
+    .banner-details p{
+        font-size:18px;
+    }
+    .banner-img-warpper{
+        margin-right: 70px;
+    }
+    .b_food1-img{
+        position: absolute;
+        right: -135px;
+        z-index: 9999;
+    }
+    .b_food2-img{
+        left: -175px;
+    }
+    /**************Banner Section End*****************/
+
+    /**************Download Section Start*****************/
+    .download-s {
+        right: -275px;
+    }    
+    .email-s {
+        left: -195px;
+    }
+    /**************Download Section End*****************/
+
+    /**************Footer Section Start*****************/
+    .footer-s {
+        left: -270px;
+    }
+    .footer-food {
+        right: -240px;
+    }
+    /**************Footer Section End*****************/
+
+
+}

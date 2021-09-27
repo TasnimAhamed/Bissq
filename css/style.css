@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+/********************************/
+.cmn-btn {
+    width: 150px;
+    height: 46px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #FF5766,#FDB27E);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 6px;
+}
+
+.cmn-btn:before {
+    content: '';
+    background: linear-gradient(45deg, #FF5766, #FDB27E);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.cmn-btn:active {
+    color: #fff;
+}
+
+.cmn-btn:active:after {
+    background: transparent;
+    
+}
+
+.cmn-btn:hover:before {
+    opacity: 1;
+}
+.cmn-btn:hover {
+    color: #fff!important;
+}
+
+.cmn-btn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #FF5766,#FDB27E);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/************Mobile Nav CSS************/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background:#fff5f5fc  ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top:40px;
+    z-index: 999999;
+  }
+  
+  .sidenav a {
+    padding-bottom: 12px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav ul{
+    padding-left: 0px;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .mobile_dropdown_item{
+    display: flex;
+    padding-bottom: 6px;
+    padding-left: 20px;
+  }
+  .mobile_icon{
+    padding-right: 10px;
+  }
+  .mobile_text p{
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #f1f1f1!important;
+  }
+  .menu-btn{
+      margin-left: auto;
+  }
+/************Mobile Nav CSS************/
+
+
+/*************Header Section Start*******************/
+.header{
+    padding-top: 20px;
+    background-color: #FFF3F3;
+}
+/*====nav Section Start=====*/
+
+.navbar-nav .nav-item{
+    margin: 0px 22px;
+}
+.navbar-nav .nav-item:last-child{
+    margin-right: 0px;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #1B1C3B;
+    font-size: 18px;
+    transition:0.5s ease-in-out;
+}
+.navbar-nav .nav-item:hover .nav-link{
+    color: #FF5766;
+    
+}
+.main-nav.fixed-top{
+    background-color: rgba(255, 243, 243, 0.9);
+}
+/*====Banner Section Start=====*/
+.header-banner{
+    padding-top: 140px;
+    padding-bottom:120px; 
+    position:relative;
+    min-height: 100vh;
+}
+.header-banner.banner-padding{
+    padding-top: 240px;
+    padding-bottom: 310px;
+}
+
+@media (max-width: 767px){
+    .header-banner.banner-padding{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.banner-details h3{
+    color: #D76957;
+    font-size:40px;
+}
+.banner-details h1{
+    color: #1B1C3B;
+    font-size:75px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 35px;
+}
+.banner-details p{
+    color: #444;
+    font-size:19px;
+    margin-bottom: 20px;
+    line-height: 32px;    
+}
+
+.b_food1-img{
+    position: absolute;
+    right: -120px;
+    z-index: 9999;
+}
+.b_food2-img{
+    position: absolute;
+    left: -160px;
+    z-index: 9999;
+    bottom: 150px;
+}
+/**************Banner Section End*****************/
+/**********Why Section Start******************/
+.why,
+.happy,
+.subscription{
+    padding: 120px 0px;
+}
+.service-row{
+    background: linear-gradient(#ffffffe6,#ffffffe6),url(./../images/why-bg.png);
+    background-position: 215px 0px;
+    background-repeat: no-repeat;
+    background-size: 850px;
+    padding: 20px 0px;
+}
+.why-details,
+.happy-details{
+    text-align: center;
+    margin-bottom:75px;
+}
+.why-details h1,
+.happy-details h1{
+    font-size: 50px;
+    color: #1B1C3B;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+.why-details h1 span,
+.happy-details h1 span{
+    color: #D76957;
+}
+.why-details p,
+.happy-details p{
+    width:560px;
+    color: #444444;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0 auto;
+    
+}
+.our-service h3{
+    font-size: 22px;
+    color: #1B1C3B;
+}
+.our-service p{
+    font-size:14px;
+    color:#444444;
+    line-height:26px
+}
+.cmn-service{
+    margin: 40px 0px;
+}
+.service_mt{
+    margin-top: -40px;
+}
+
+/**********Why Section End******************/
+
+/**********Download Section Start******************/
+.download{
+    background-color: #FFF3F3;
+    position: relative;
+    padding:150px 0px;
+}
+.download-s{
+    position: absolute;
+    right: -250px;
+    top: -300px;
+}
+.download-details h1{
+    font-size: 50px;
+    line-height: 60px;
+    color: #D76957;
+    font-weight: 600;
+}
+.download-details h1 span{
+    color: #1B1C3B;
+    
+}
+.download-details p{
+    font-size: 18px;
+    color: #696969;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+.download-btn{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    width: 100%;
+    height: 80px;
+    text-align: left;
+    
+}
+.download-btn:focus{
+    outline: none;
+}
+.app-details h3{
+    font-size: 16px;
+}
+.app-details h1{
+    font-size: 27px;
+    color: #fff;
+    line-height: 22px;
+}
+/**********Download Section End******************/
+
+
+/********Happy Client Section Start****************/
+.client-card {
+    padding: 40px;
+    border-radius: 10px;
+}
+.client-card h3{
+    font-size: 25px;
+    margin-bottom:35px!important;
+    font-weight: 500;
+}
+.client-h1{
+    color: #00CAFF; 
+}
+.client-h2{
+    color: #F7921C; 
+}
+.client-h3{
+    color: #3A57A3; 
+}
+.client-card p,
+.client-card ul li span{
+    color: #010101;
+    font-size:18px;
+    line-height:32px;
+}
+.clientCardOne{
+    box-shadow: 0px 0.5rem 1rem #00000013;
+}
+.clientCardTwo{
+    box-shadow: 0px 20px 45px #f8951d4f;
+}
+.client-card ul{
+   margin-top:20px;
+   margin-bottom:0px;
+}
+.client-card ul li img{
+    width:66px;
+}
+
+
+/********Happy Client Section End****************/
+
+/**********Email Subscription Section Start****************/
+.subscription{
+    position: relative;
+    padding-bottom: 400px;
+}
+.email-s{
+    position: absolute;
+    left: -275px;
+    top: -170px;
+    width: 25%;
+}
+.email-subscription{
+    box-shadow: 0px 0px 10px #ddd;
+    padding: 35px;
+    border-radius:8px;
+}
+.email-subscription h3{
+    font-size:45px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.email-subscription h3 span{
+    color: #D76957;
+}
+.email-subscription p{
+    font-size:18px;
+    color: #444444;
+    line-height:32px;
+    margin-bottom:20px;
+}
+form .username,
+form .useremail{
+    margin-bottom: 28px;
+}
+form .username span,
+form .useremail span,
+form .username input,
+form .useremail input{
+    background-color: #F4F4F4!important;
+    min-height: 52px;
+    border:0;
+}
+
+.username span ,
+.useremail span {   
+    width:35px;
+    padding-right: 0px;
+}
+.username span i,
+.useremail span i{
+    font-size:20px;
+}
+.username input:focus ,
+.useremail input:focus {   
+   box-shadow: none;
+}
+
+/**********Email Subscription Section End****************/
+
+
+/********Footer Section Start****************/
+.footer{
+    padding-top: 120px;
+    padding-bottom:25px;
+    background-color: #FFF3F3;
+    position: relative;
+}
+.footer-s{
+    width:25%;
+    position:absolute;
+    bottom:0px;
+    left:-340px;
+}
+.footer-food{
+    width:25%;
+    position:absolute;
+    bottom:0px;
+    right:-300px;
+}
+.precious-food{
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 20px 2rem #00000013;
+    z-index: 99;
+    margin-top: -500px;
+}
+.precious-food-content{
+    padding-bottom: 70px;
+}
+.precious-food-content h1{
+    color: #1B1C3B;
+    font-size:50px;
+    line-height:60px;
+    margin-bottom:20px;
+    font-weight: 700;
+}
+.precious-food-content h1 span{
+    color: #D76957;
+}
+.precious-food-content p{
+    font-size:20px;
+    font-weight: 500;
+    color: #444444;
+    line-height:32px;
+    width:90%;
+    margin-bottom:18px;
+}
+.border_bottom{
+    padding-top: 85px;
+    padding-bottom:50px;
+    border-bottom:1px solid #555555;
+}
+.footer-text img{
+    width:150px;
+    margin-bottom: 15px;
+}
+.footer-text p,
+.contact-area p{
+    font-size:16px;
+    line-height:32px;
+    color: #555555;
+}
+.footer-link h1,
+.contact-area h1{
+    color:#D76957;
+    font-size:25px;
+}
+.footer-link ul,
+.contact-area ul{
+    padding-left: 0px;
+}
+.footer-link ul li{
+    list-style-type:none;
+    margin: 15px 0px;
+    
+}
+.footer-link ul li a{
+    color: #555555!important;
+    text-decoration:none;
+    font-size: 18px;
+    transition:0.3s ease-in-out;
+}
+.footer-link ul li:hover a{
+    color: #D76957!important;
+    
+}
+.contact-area ul li{
+    margin-right: 20px!important;
+}
+.contact-area ul li a{
+    border:1px solid #D76957;
+    width:45px;
+    height:45px;
+    display: inline-block;
+    color: #D76957;
+    border-radius:50%;
+    text-align: center;
+    font-size:18px;
+    transition:0.4s ease-in-out;;
+}
+.contact-area ul li a i{
+    margin-top: 12px;
+}
+.contact-area ul :hover a {
+    background: #D76957;
+    color: #fff!important;
+}
+.copyright{
+    display:flex;
+    justify-content: space-between;
+    padding-top:30px;
+}
+.copyright p{
+    font-size:18px;
+    font-weight:600;
+}
+.copyright p:first-child{
+    color:#666666;
+}
+.copyright p:last-child{
+    color:#D76957;
+    cursor: pointer;
+}
+.copyright p:last-child i{
+    margin-left: 10px;
+}
+/********Footer Section End****************/
+
+
+/*Animation*/
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    animation-duration: 800ms;
+  }
+
+  /*SOlar System*/
+
+  .solar-system-wrapper{
+      position: relative;
+  }
+  .solar-system-wrapper img{
+      position: absolute;
+      top: -175px;
+      z-index: 1;
+      width: 90%;
+  }
+  
+.solar-system{
+    width:550px;
+    height:550px;
+    border:1px solid #E5DBDB;
+    position:absolute;
+    top:-45px; 
+    bottom:0; 
+    left:0;
+    right:0;
+    border-radius:50%;
+    margin-top: -45px; 
+  }
+  
+  .jupiter-outer-circle-1,
+  .earth-outer-circle-1{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  .jupiter-outer-circle-1{
+    border: 1px solid #D7625D;
+    animation: circle 10s linear infinite;
+  }
+  .earth-outer-circle-1{
+    border: 1px solid #0389DE;
+    animation: circle 8s linear infinite;
+    animation-delay: 1s;
+    transform:translate(-275px);
+  }
+  .jupiter-outer-circle-2,
+  .earth-outer-circle-2{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  .jupiter-outer-circle-2{
+    border: 1px solid #D7625D;
+  }
+  .earth-outer-circle-2{
+    border: 1px solid #0389DE;
+  }
+  .jupiter,
+  .earth{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+  }
+  .jupiter{
+    background: #D7625D;
+  }
+  .earth{
+    background:#0389DE;
+  }
+  
+  .inner-system{
+    width:380px;
+    height:380px;
+    border:1px solid #E5DBDB;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+    border-radius:50%; 
+  }
+  
+  
+  .venus-outer-circle-1{
+    border: 1px solid #E5DBDB;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+    animation: circleTwo 8s linear infinite;
+  }
+  .venus-outer-circle-2{
+    width:30px;
+    height:30px;
+    border:1px solid #E5DBDB;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  
+  .venus{
+    width:15px;
+    height:15px;
+    background:linear-gradient(to right, #FF5766,#FDB27E);
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  
+  
+  
+  .uranus-outer-circle-1{
+    border: 1px solid #E5DBDB;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+    animation: circleTwo 6.5s linear infinite;
+    animation-delay: 1s;
+    transform: translate(-190px);
+  }
+  .uranus-outer-circle-2{
+    width:20px;
+    height:20px;
+    border:1px solid #E5DBDB;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  
+  .uranus{
+    width:10px;
+    height:10px;
+    background:#E32FFA;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  
+  
+  
+  .mars-outer-circle-1{
+    border: 1px solid #E5DBDB;
+    width: 32px;
+    height:32px;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+    animation: circleTwo 5s linear infinite;
+    animation-delay: 2s;
+    transform: translate(-190px);
+  }
+  .mars-outer-circle-2{
+    width:20px;
+    height:20px;
+    border:1px solid #E5DBDB;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  
+  .mars{
+    width:10px;
+    height:10px;
+    background:linear-gradient(to right, #FF5766,#FDB27E);
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  
+  
+  
+  
+    @keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-275px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-275px)
+                rotate(-360deg);
+    }
+  } 
+  @keyframes circleTwo{
+    0%{
+      transform:rotate(0deg)
+                translate(-190px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-190px)
+                rotate(-360deg);
+    }
+  } 
+    
+  
+  
+  /*SOlar System*/
