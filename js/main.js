@@ -30,4 +30,11 @@ $(document).ready(function(){
 
       }
   });
+
+  $(window).on("load", function() {
+
+    // page load function start
+    $("#pre-loader").fadeOut("slow");
+    // page load function end 
+});
 })
