@@ -90,7 +90,7 @@ body{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top:40px;
-    z-index: 999999;
+    z-index: 99999;
   }
   
   .sidenav a {
@@ -192,12 +192,12 @@ body{
 .b_food1-img{
     position: absolute;
     right: -120px;
-    z-index: 9999;
+    z-index: 999;
 }
 .b_food2-img{
     position: absolute;
     left: -160px;
-    z-index: 9999;
+    z-index: 999;
     bottom: 150px;
 }
 /**************Banner Section End*****************/
