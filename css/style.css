@@ -827,20 +827,20 @@ form .useremail input{
     overflow: hidden;
   }
   .pre-loader-solar-system{
-        width:350px;
-        height:350px;
-        border:1px solid #E5DBDB;
-        position:absolute;
-        top:-45px; 
-        bottom:0; 
-        left:0;
-        right:0;
-        border-radius:50%;
-        margin: auto;      
+    width:200px;
+    height:200px;
+    border:1px solid #E5DBDB;
+    position:absolute;
+    top:-45px; 
+    bottom:0; 
+    left:0;
+    right:0;
+    border-radius:50%;
+    margin: auto;      
   }
   .loader-outer-circle-1{
-    width:45px;
-    height:45px;
+    width:32px;
+    height:32px;
     border-radius:50%;
     position:absolute;
     top:0; 
@@ -848,14 +848,14 @@ form .useremail input{
     left:0;
     right:0;
     margin:auto;
-    border: 1px solid #0389DE;
-    animation: loader 8s linear infinite;
+    border: 1px solid#FDB27E;
+    animation: loader 6s linear infinite;
   }
   .loader-outer-circle-2{
-    width:30px;
-    height:30px;
+    width:22px;
+    height:22px;
     border-radius:50%;
-    border: 1px solid #0389DE;
+    border: 1px solid#FF5766;
     position:absolute;
     top:0; 
     bottom:0; 
@@ -864,8 +864,8 @@ form .useremail input{
     margin:auto;
   }
   .loader{
-    width:15px;
-    height:15px;
+    width:12px;
+    height:12px;
     border-radius:50%;
     position:absolute;
     top:0; 
@@ -875,16 +875,84 @@ form .useremail input{
     margin:auto;
     background:#0389DE;
   }
+
+   
+  .preloader-inner-system{
+    width:100px;
+    height:100px;
+    border:1px solid #E5DBDB;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    margin:auto;
+    border-radius:50%; 
+  }
+  .loader2-outer-circle-1{
+    border: 1px solid #E5DBDB;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+    animation: loaderTwo 4s linear infinite;
+  }
+  .loader2-outer-circle-2{
+    width:20px;
+    height:20px;
+    border:1px solid #E5DBDB;
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+  }
+  
+  .loader2{
+    width:10px;
+    height:10px;
+    background:linear-gradient(to right, #FF5766,#FDB27E);
+    border-radius:50%;
+    position:absolute;
+    top:0; 
+    bottom:0; 
+    left:0;
+    right:0;
+    margin:auto;
+  }
+
+
+
+
   @keyframes loader{
     0%{
       transform:rotate(0deg)
-                translate(-175px)
+                translate(-100px)
                 rotate(0deg);
     
     }
     100%{
       transform:rotate(360deg)
-                translate(-175px)
+                translate(-100px)
+                rotate(-360deg);
+    }
+  } 
+
+
+  @keyframes loaderTwo{
+    0%{
+      transform:rotate(0deg)
+                translate(-50px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-50px)
                 rotate(-360deg);
     }
   } 
