@@ -21,7 +21,7 @@ burgerIcon.addEventListener('click',()=>{
 $(document).ready(function(){
   $(window).scroll(function(){
       var navFixed = $(window).scrollTop();
-      if(navFixed > 200){
+      if(navFixed > 100){
           $(".main-nav").addClass("fixed-top fadeInDown");
           $(".header-banner").addClass("banner-padding");
       }else{
@@ -37,4 +37,25 @@ $(document).ready(function(){
     $("#pre-loader").fadeOut("slow");
     // page load function end 
 });
+})
+
+
+//Scroll Bar JS
+var body = document.body,
+    html = document.documentElement;
+
+var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                    html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+var clientHeight = html.clientHeight;
+
+
+$(document).ready(function(){
+
+    $(window).scroll(function(){
+        var navFixed = $(window).scrollTop();
+        var result=(navFixed*100)/(height-clientHeight);
+
+        document.getElementById('scroll-bar').style.width=  `${result}%`;
+    });
 })

@@ -956,3 +956,14 @@ form .useremail input{
                 rotate(-360deg);
     }
   } 
+
+/*Scroll Bar*/
+.scroll-bar{
+  display: inline-block;
+  background:linear-gradient(to right, #FF5766,#FDB27E);
+  height: 4px;
+  position: fixed;
+  top: 95px;
+  left: 0;
+  z-index: 999999;
+}
